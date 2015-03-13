@@ -33,6 +33,19 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.mt6589.usb.rc:/root/init.mt6589.usb.rc \
 #	$(LOCAL_PATH)/root/adb_keys:/root/adb_keys \
 
+#Offline Charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/root/charger:root/charger \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_0.png:root/res/images/charger/battery_0.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_1.png:root/res/images/charger/battery_1.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_2.png:root/res/images/charger/battery_2.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_3.png:root/res/images/charger/battery_3.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_4.png:root/res/images/charger/battery_4.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_5.png:root/res/images/charger/battery_5.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_charge.png:root/res/images/charger/battery_charge.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/rootdir/root/res/images/charger/battery_scale.png:root/res/images/charger/battery_scale.png
+
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
