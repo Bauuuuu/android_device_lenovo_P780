@@ -49,11 +49,11 @@ on fs
     chmod 0771 /protect_s
 
     # SGX
-    insmod /system/lib/modules/pvrsrvkm.ko
-    insmod /system/lib/modules/mtklfb.ko
+   # insmod /system/lib/modules/pvrsrvkm.ko
+   # insmod /system/lib/modules/mtklfb.ko
 
     # device info /proc interface
-    insmod /system/lib/modules/devinfo.ko
+   # insmod /system/lib/modules/devinfo.ko
     exec /system/xbin/mknod /dev/devmap c 196 0
     chmod 0444 /dev/devmap
     chown root media /dev/devmap
@@ -210,7 +210,7 @@ on post-fs-data
     mkdir /data/misc/ppp 0770 bluetooth net_bt
 
     # Android SEC related device nodes
-    insmod /system/lib/modules/sec.ko
+    #insmod /system/lib/modules/sec.ko
     exec /system/xbin/mknod /dev/sec c 182 0
     chmod 0660 /dev/sec
     chown root system /dev/sec
